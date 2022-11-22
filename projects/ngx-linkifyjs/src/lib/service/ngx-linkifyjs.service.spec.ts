@@ -13,8 +13,9 @@ import {Link} from '../interfaces/ngx-linkifyjs.interface';
 describe('NgxLinkifyjsService without importing hashtag/mention', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [NgxLinkifyjsService]
-    });
+    providers: [NgxLinkifyjsService],
+    teardown: { destroyAfterEach: false }
+});
   });
 
   it('should create service without importing the hashtag/mention lib', inject([NgxLinkifyjsService], (service: NgxLinkifyjsService) => {
@@ -50,8 +51,9 @@ describe('NgxLinkifyjsService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [NgxLinkifyjsService]
-    });
+    providers: [NgxLinkifyjsService],
+    teardown: { destroyAfterEach: false }
+});
   });
 
   it('should create service', inject([NgxLinkifyjsService], (service: NgxLinkifyjsService) => {
