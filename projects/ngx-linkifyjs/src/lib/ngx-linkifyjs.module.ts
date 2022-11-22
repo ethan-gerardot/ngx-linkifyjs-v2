@@ -31,7 +31,7 @@ export const DEFAULT_CONFIG: NgxLinkifyjsConfig = {enableHash: true, enableMenti
 })
 export class NgxLinkifyjsModule {
 
-  static forRoot(config: NgxLinkifyjsConfig = DEFAULT_CONFIG): ModuleWithProviders {
+  static forRoot(config: NgxLinkifyjsConfig = DEFAULT_CONFIG): ModuleWithProviders<NgxLinkifyjsModule> {
     return {
       ngModule: NgxLinkifyjsModule,
       providers:
