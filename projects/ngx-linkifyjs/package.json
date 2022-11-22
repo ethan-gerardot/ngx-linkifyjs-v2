@@ -132,6 +132,9 @@
       "rollup-plugin-uglify"
     ]
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "commitplease": {
     "style": "angular",
     "types": [
