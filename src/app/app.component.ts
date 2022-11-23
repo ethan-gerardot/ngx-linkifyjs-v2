@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {Angulartics2GoogleAnalytics} from 'angulartics2/ga';
 import {Link, NgxLinkifyjsService} from 'ngx-linkifyjs-v2';
 
 @Component({
@@ -22,8 +21,7 @@ export class AppComponent {
   testLinkResult: boolean;
   testLinkRequested: boolean;
 
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics, public linkifyService: NgxLinkifyjsService) {
-    angulartics2GoogleAnalytics.startTracking();
+  constructor(public linkifyService: NgxLinkifyjsService) {
   }
 
 }

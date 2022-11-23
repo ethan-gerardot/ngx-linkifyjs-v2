@@ -1,10 +1,6 @@
 import {Injectable} from '@angular/core';
-// @ts-ignore
 import * as linkify from 'linkifyjs';
-// @ts-ignore
-// import * as linkifyStr from 'linkifyjs/string';
-import linkifyStr from 'linkifyjs/string';
-// @ts-ignore
+import linkifyStr from 'linkify-string';
 import {Link, NgxLinkifyOptions} from '../interfaces/ngx-linkifyjs.interface';
 
 @Injectable()
@@ -19,9 +15,7 @@ export class NgxLinkifyjsService {
    * @param options - options to pass it to the linkifyjs library
    */
   linkify(text: string, options?: NgxLinkifyOptions): string {
-    // @ts-ignore
     return linkifyStr(text, options);
-    // return '';
   }
 
   /**
@@ -34,7 +28,7 @@ export class NgxLinkifyjsService {
   }
 
   /**
-   * Test if a given value or array of values are links
+   * Test if a given value is a link or an array of all links
    *
    * @param value - the value to test
    */
@@ -42,7 +36,7 @@ export class NgxLinkifyjsService {
     if (typeof value === 'string') {
       return linkify.test(value);
     }
-    return linkify.test(...value);
+    return value.find(v => !linkify.test(v)) === undefined;
   }
 
 }

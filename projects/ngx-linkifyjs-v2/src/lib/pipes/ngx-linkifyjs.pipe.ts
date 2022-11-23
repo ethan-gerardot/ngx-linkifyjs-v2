@@ -1,7 +1,6 @@
 import {Pipe, PipeTransform} from '@angular/core';
-// @ts-ignore
-import linkifyStr from 'linkifyjs/string';
 import {NgxLinkifyOptions} from '../interfaces/ngx-linkifyjs.interface';
+import linkifyStr from 'linkify-string';
 
 @Pipe({
   name: 'linkify'

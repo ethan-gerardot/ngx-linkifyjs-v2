@@ -1,5 +1,5 @@
 import {Rule, Tree,} from '@angular-devkit/schematics';
-/* tslint:disable:no-unused-variable */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   AppConfig as OriginalAppConfig,
   CliConfig as OriginalCliConfig,
@@ -29,7 +29,7 @@ export function getWorkspace(host: Tree): WorkspaceSchema {
   return originalGetWorkspace(host);
 }
 
-/* tslint:disable:no-unused-variable */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export function addProjectToWorkspace<TProjectType extends ProjectType = ProjectType.Application>(
   workspace: WorkspaceSchema,
   name: string,

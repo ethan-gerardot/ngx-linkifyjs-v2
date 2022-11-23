@@ -1,11 +1,9 @@
 import {CommonModule} from '@angular/common';
 import {Inject, InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
-// @ts-ignore
-import * as linkify from 'linkifyjs';
-// @ts-ignore
-import hashtag from 'linkifyjs/plugins/hashtag';
-// @ts-ignore
-import mention from 'linkifyjs/plugins/mention';
+// TODO REMOVE ME
+// import * as linkify from 'linkifyjs';
+// import hashtag from 'linkify-plugin-hashtag';
+// import mention from 'linkify-plugin-mention';
 
 import {NgxLinkifyjsService} from './service/ngx-linkifyjs.service';
 import {NgxLinkifyjsPipe} from './pipes/ngx-linkifyjs.pipe';
@@ -47,13 +45,14 @@ export class NgxLinkifyjsModule {
 
   constructor(@Inject(NgxLinkifyjsConfigToken)
               public config: NgxLinkifyjsConfig) {
-    if (config.enableHash) {
-      hashtag(linkify);
-    }
-
-    if (config.enableMention) {
-      mention(linkify);
-    }
+    // TODO REMOVE ME
+    // if (config.enableHash) {
+    //   hashtag(linkify);
+    // }
+    //
+    // if (config.enableMention) {
+    //   mention(linkify);
+    // }
   }
 
 }

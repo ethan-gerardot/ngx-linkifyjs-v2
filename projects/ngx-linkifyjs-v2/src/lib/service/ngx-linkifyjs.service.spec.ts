@@ -1,10 +1,8 @@
 import {inject, TestBed} from '@angular/core/testing';
-// @ts-ignore
-import * as linkify from 'linkifyjs';
-// @ts-ignore
-import * as hashtag from 'linkifyjs/plugins/hashtag';
-// @ts-ignore
-import * as mention from 'linkifyjs/plugins/mention';
+// TODO REMOVE ME
+// import * as linkify from 'linkifyjs';
+// import * as hashtag from 'linkify-plugin-hashtag';
+// import * as mention from 'linkify-plugin-mention';
 
 import {NgxLinkifyjsService} from './ngx-linkifyjs.service';
 import {LinkType} from '../enum/linktype.enum';
@@ -45,8 +43,9 @@ describe('NgxLinkifyjsService without importing hashtag/mention', () => {
 describe('NgxLinkifyjsService', () => {
 
   beforeAll(() => {
-    hashtag(linkify);
-    mention(linkify);
+    // TODO REMOVE ME
+    // hashtag(linkify);
+    // mention(linkify);
   });
 
   beforeEach(() => {
