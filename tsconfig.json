@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ngx-linkifyjs": [
-        "dist/ngx-linkifyjs"
+      "ngx-linkifyjs-v2": [
+        "dist/ngx-linkifyjs-v2"
       ],
-      "ngx-linkifyjs/*": [
-        "dist/ngx-linkifyjs/*"
+      "ngx-linkifyjs-v2/*": [
+        "dist/ngx-linkifyjs-v2/*"
       ]
     }
   },

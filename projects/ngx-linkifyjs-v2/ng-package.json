@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-linkifyjs",
+  "dest": "../../dist/ngx-linkifyjs-v2",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

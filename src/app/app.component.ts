@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Angulartics2GoogleAnalytics} from 'angulartics2/ga';
-import {Link, NgxLinkifyjsService} from 'ngx-linkifyjs';
+import {Link, NgxLinkifyjsService} from 'ngx-linkifyjs-v2';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {Link, NgxLinkifyjsService} from 'ngx-linkifyjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-linkifyjs';
+  title = 'ngx-linkifyjs-v2';
 
   example1 = `Hi, I'm Anthony Nahas, the developer of ngx-linkifyjs. You can find this project on
               github here: https://github.com/anthonynahas/ngx-linkifyjs and the demo app with this

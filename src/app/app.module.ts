@@ -8,7 +8,7 @@ import {MarkdownModule} from 'ngx-markdown';
 import {Angulartics2Module} from 'angulartics2';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule, MatInputModule} from '@angular/material';
-import {NgxLinkifyjsModule} from 'ngx-linkifyjs';
+import {NgxLinkifyjsModule} from 'ngx-linkifyjs-v2';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
