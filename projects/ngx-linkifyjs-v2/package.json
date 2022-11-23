@@ -30,7 +30,6 @@
   "bugs": {
     "url": "https://github.com/ethan-gerardot/ngx-linkifyjs-v2/issues"
   },
-  "private": true,
   "scripts": {
     "build": "../../node_modules/.bin/ng build ngx-linkifyjs-v2",
     "build:schematics": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
@@ -50,7 +49,10 @@
   "peerDependencies": {
     "@angular/common": "<15",
     "@angular/core": "<15",
-    "linkifyjs": "^2.1.8"
+    "linkifyjs": "^4.0.2",
+    "linkify-plugin-hashtag": "^4.0.2",
+    "linkify-plugin-mention": "^4.0.2",
+    "linkify-string": "^4.0.2"
   },
   "engines": {
     "node": ">=10.0.0"
