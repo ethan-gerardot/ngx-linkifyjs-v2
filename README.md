@@ -370,6 +370,13 @@ $ npm i && npm start
 
 <a name="other-angular-libraries"/>
 
+## Publishing
+
+1. Update version number in package.json and projects/ngx-linkifyjs-v2/package.json
+2. `npm run build:lib:prod`
+3. `cd dist/ngx-linkifyjs-v2`
+4. `npm publish`
+
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/anthonynahas/ngx-auth-firebaseui)
 - [@firebaseui/ng-bootstrap](https://github.com/firebaseui/ng-bootstrap)
