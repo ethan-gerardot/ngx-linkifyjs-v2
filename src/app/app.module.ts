@@ -6,22 +6,15 @@ import {AppComponent} from './app.component';
 import {MarkdownModule} from 'ngx-markdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxLinkifyjsModule} from 'ngx-linkifyjs-v2';
-import {HttpClientModule} from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule.withServerTransition({appId: 'serverApp'}),
-    AppRoutingModule,
-    HttpClientModule,
-    NgxLinkifyjsModule.forRoot(),
-    MarkdownModule.forRoot(),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserAnimationsModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
+        AppRoutingModule,
+        NgxLinkifyjsModule.forRoot(),
+        MarkdownModule.forRoot()], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {
 }
