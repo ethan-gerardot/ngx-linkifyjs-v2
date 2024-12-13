@@ -3,7 +3,8 @@ import {NgxLinkifyOptions} from '../interfaces/ngx-linkifyjs.interface';
 import linkifyStr from 'linkify-string';
 
 @Pipe({
-  name: 'linkify'
+    name: 'linkify',
+    standalone: false
 })
 export class NgxLinkifyjsPipe implements PipeTransform {
 
