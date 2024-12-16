@@ -47,8 +47,8 @@
     "test:watch": "../../node_modules/.bin/jest --coverage --watch"
   },
   "peerDependencies": {
-    "@angular/common": "<18",
-    "@angular/core": "<18",
+    "@angular/common": "<20",
+    "@angular/core": "<20",
     "linkifyjs": "^4.0.2",
     "linkify-plugin-hashtag": "^4.0.2",
     "linkify-plugin-mention": "^4.0.2",
