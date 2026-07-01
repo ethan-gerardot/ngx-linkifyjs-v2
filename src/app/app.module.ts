@@ -12,7 +12,7 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
         AppComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserAnimationsModule,
-        BrowserModule.withServerTransition({ appId: 'serverApp' }),
+        BrowserModule,
         AppRoutingModule,
         NgxLinkifyjsModule.forRoot(),
         MarkdownModule.forRoot()], providers: [provideHttpClient(withInterceptorsFromDi())] })

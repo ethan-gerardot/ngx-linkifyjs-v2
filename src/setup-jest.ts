@@ -1,4 +1,6 @@
-import 'jest-preset-angular';
+import { setupZoneTestEnv } from 'jest-preset-angular/setup-env/zone';
+
+setupZoneTestEnv();
 
 /* global mocks for jsdom */
 const mock = () => {
@@ -25,6 +27,3 @@ Object.defineProperty(document.body.style, 'transform', {
     };
   },
 });
-
-/* output shorter and more meaningful Zone error stack traces */
-// Error.stackTraceLimit = 2;
