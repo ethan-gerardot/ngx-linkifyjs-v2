@@ -1,7 +1,7 @@
 {
   "name": "ngx-linkifyjs-v2",
   "description": "Angular wrapper for linkifyjs -  library for finding links in plain text and converting them to HTML &lt;a&gt; tags via linkifyjs",
-  "version": "20.0.0",
+  "version": "21.0.0",
   "homepage": "https://github.com/ethan-gerardot/ngx-linkifyjs-v2",
   "author": {
     "name": "Ethan Gerardot",
@@ -47,8 +47,8 @@
     "test:watch": "../../node_modules/.bin/jest --coverage --watch"
   },
   "peerDependencies": {
-    "@angular/common": "<21",
-    "@angular/core": "<21",
+    "@angular/common": "<22",
+    "@angular/core": "<22",
     "linkifyjs": "^4.0.2",
     "linkify-plugin-hashtag": "^4.0.2",
     "linkify-plugin-mention": "^4.0.2",
@@ -98,16 +98,6 @@
       "/config",
       "/dist/"
     ]
-  },
-  "globals": {
-    "ts-jest": {
-      "tsConfig": "<rootDir>/tsconfig.spec.json",
-      "stringifyContentPathRegex": "\\.html$",
-      "astTransformers": [
-        "jest-preset-angular/build/InlineFilesTransformer",
-        "jest-preset-angular/build/StripStylesTransformer"
-      ]
-    }
   },
   "greenkeeper": {
     "ignore": [
